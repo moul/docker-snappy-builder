@@ -10,3 +10,7 @@ build: build-image
 
 build-image:
 	docker build -t moul/snappy-builder .
+
+
+publish: build-image
+	docker push moul/snappy-builder
